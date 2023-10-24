@@ -20,7 +20,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Auth
+Route::resource('hola',function(){
+    return 'hola';
+});
 
 Route::get('login', [AuthenticatedSessionController::class, 'create'])
     ->name('login')
